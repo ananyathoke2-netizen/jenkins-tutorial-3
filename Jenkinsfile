@@ -8,9 +8,12 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-            steps {
-                bat '"C:\\Users\\ADMIN\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t tut5 .'
+       stage('Build Docker Image') {
+    steps {
+        bat 'whoami'
+        bat 'dir "C:\\Users\\ADMIN\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe"'
+    }
+}
             }
         }
 
